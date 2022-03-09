@@ -18,6 +18,13 @@ header {
     height: 100px;
     background-color: #fff;
     color: #000;
+    box-shadow: 0px 1px 6px 0px black;
+}
+.shadow {
+    box-shadow: 0px 1px 6px 0px black;
+}
+#sobre {
+    background-color: rgba(140, 193, 199,0.5);
 }
 .header {
     max-width: 1140px;
@@ -30,12 +37,15 @@ header {
 /*Formatação da logo do cabeçalho*/
 .logo {
     width: 100px;
+    
 }
+
 .logoimg {
-    width: 80px;
-    height: 80px;
-    background-color: #ccc;
-    border-radius: 40px;
+    width: 100px;
+    height: 100px;
+    /* background-color: #ccc; */
+    border-radius: 50px;
+    background-image: url(../images/logo.jpeg);
 }
 
 /*Estilização e formatação do menu*/
@@ -43,6 +53,7 @@ header {
     flex:1;
     display:flex;
     justify-content: flex-end;
+   
 }
 .menu ul,
 .menu li {
@@ -65,7 +76,7 @@ header {
 }
 .menu li a:hover,
 .menu .active a {
-    border-bottom:5px solid #8CC1C7;
+    border-bottom:5px solid rgb(140, 193, 199);
     color:#000;
 }
 
@@ -152,6 +163,7 @@ header {
     height: 20px;
     position: absolute;
     display: flex;
+    justify-content: flex-end;
 }
 section .badge-ico {
     background-color: #8CC1C7;
@@ -164,7 +176,7 @@ section .badge-ico {
     box-shadow: 0 0 20px rgb(0 0 0 / 70%);
 }
 .badge-ico {
-    position: absolute;
+    position: relative;
     right: 40px;
     top: -30px;
 }
@@ -189,7 +201,7 @@ section .badge-ico {
 }
 .default .sec-desc {
     font-size: 12px;
-    color: #ccc;
+    color: #000;
     margin-top: 12px;
     margin-bottom: 40px;
 }
@@ -233,7 +245,7 @@ section .badge-ico {
     text-align: center;
 }
 .sec-aboutus-dir img {
-    width: 450px;
+    width: 380px;
     box-shadow: 0px 5px 20px #333;
 }
 .sec-aboutus-esq p {
@@ -264,7 +276,7 @@ section .badge-ico {
     font-size: 10px;
     margin-top: 10px;
     line-height: 20px;
-    color: #999;
+    color: #000;
 }
 .sec-services img {
     margin-bottom: 30px;
@@ -854,7 +866,7 @@ section .badge-ico {
 
 /*Rodapé do site*/
 footer {
-    background-color:#000;
+    background-color:#fff;
     padding:20px;
 }
 .footer--area {
@@ -873,7 +885,7 @@ footer {
     display:block;
     width:25px;
     height:25px;
-    background-color:#333;
+    background-color:#8CC1C7;
     display:flex;
     justify-content: center;
     align-items: center;
