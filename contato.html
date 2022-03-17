@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Tânia Portella - Contato</title>
 </head>
@@ -19,12 +20,12 @@
     <div class="header">
         <div class="logo">
 
-            <div class="logoimg">
+            <div class="logoimg"> 
 
             </div>
         </div>
 
-
+        <h1 class="titulo">Espaço Neuropsicomodular</h1>
         <div class="menu">
             <img class="menu-abrido" src="assets/images/menu.png" alt="menu">
             <nav>
@@ -38,72 +39,86 @@
         </div>
     </div>
     </header>
+    <section class="default lite" id="sobre">
 
-<section class="default lite" id="sobre">
-    <div class="sec-title">Contato</div>
-    <div class="sec-desc"></div>
-    <div class="sec-body">
-        <div class="section-contact">
-            <form method="POST">
+        <!--Formatação padrão para seção com fundo branco-->
+        <div class="sec-title">Entre em contato</div>
+        <div class="sec-desc"></div>
+        <div class="sec-body">
+            <div class="section-contact">
+                <form method="POST" action="./email.php">
 
-                <div class="section-contact--split">
-                    <input type="text" name="name" placeholder="NOME">
-                    <input type="text" name="name" placeholder="EMAIL">
+                    <div class="section-contact--split">
+                        <input type="text" name="name" placeholder="NOME">
+                        <input type="text" name="name" placeholder="EMAIL">
+                    </div>
+
+                    <input type="text" name="name" placeholder="ASSUNTO">
+
+                    <textarea name="mensage" placeholder="MESSAGEM"></textarea>
+
+                    <input type="submit" value="ENVIAR" class="button" style="margin-top: 10px;">
+
+                </form>
+            </div>
+    </section>
+
+    <!--Seção Maps-->
+    <section class="sec-map">
+        <div class="sec-map-area" >
+            
+            <div class="sec-map-info">
+                
+                    <div class="sec-info-item">
+                    <div class="sec-info-item-img">
+                        <img src="assets/images/localizacao.png" alt="endereço do consultorio">
+                    </div>
+                    Rua João Cardoso Ayres, 888 - Boa Viagem<br>
+                    Espaço Neuropsicomodular – sala 06
+
+                </div>
+                <br>
+                <div class="sec-info-item">
+                    <div class="sec-info-item-img">
+                        <img src="assets/images/telefone.png" alt="carta">
+                    </div>
+                    +55 (81) 99819-1777 <br>
+                    +55 (81) 98778-3395 <br>
+                    +55 (81) 99252-4194
+
+                </div> 
+                <div class="sec-info-item">
+                    <div class="sec-info-item-img">
+                        <img src="assets/images/arroba.png" alt="carta">
+                    </div>
+                    email@gmail.com
+
+                </div> <br>
+                <div class="sec-info-item">
+                    <div class="sec-info-item-img">
+                        <img src="assets/images/relogio2.png" alt="carta" style="width: 21px;"> 
+                    </div>
+                   <p> HORÁRIOS DE ATENDIMENTO: <br> 
+                    Segunda a Sexta-feira:
+                    Das 08h:00  às 18h:00 <br>
+                    Sábados: 08h às 12:00.</p>
+
+
                 </div>
 
-                <input type="text" name="name" placeholder="SUBJECT">
-
-                <textarea name="mensage" placeholder="MESSAGE"></textarea>
-
-                <input type="submit" value="Send Menssage" class="button">
-
-            </form>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.4044683768458!2d-34.9132188017814!3d-8.140326787632276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1e2e99d8d051%3A0xb991df8a8b4919ce!2sR.%20Jo%C3%A3o%20Cardoso%20Aires%2C%20888%20-%20Boa%20Viagem%2C%20Recife%20-%20PE%2C%2051130-300!5e0!3m2!1spt-BR!2sbr!4v1647395716851!5m2!1spt-BR!2sbr" width="600" height="400" style="border:0; " allowfullscreen="" loading="lazy"></iframe>
         </div>
-</section>
-<section class="sec-map">
-    <div class="sec-map-area">
-        <div class="sec-map-info">
-            <div class="sec-info-item">
-                <div class="sec-info-item-img">
-                    <img src="assets/images/carta.png" alt="carta">
-                </div>
-                Rua 
+    </section>
 
-            </div>
-            <div class="sec-info-item">
-                <div class="sec-info-item-img">
-                    <img src="assets/images/localizacao.png" alt="carta">
-                </div>
-                Rua 
-
-            </div>
-            <div class="sec-info-item">
-                <div class="sec-info-item-img">
-                    <img src="assets/images/telefone.png" alt="carta">
-                </div>
-                +55 81 99999-9999
-
-            </div>
-            <div class="sec-info-item">
-                <div class="sec-info-item-img">
-                    <img src="assets/images/arroba.png" alt="carta">
-                </div>
-                email@gmail.com
-
-            </div>
-            <div class="sec-info-item">
-                <div class="sec-info-item-img">
-                    <img src="assets/images/web.png" alt="carta">
-                </div>
-                www.exemple.com.br
-
-            </div>
-
-        </div>
+<section class="icon">
+    <div class="badge-ico">
+        <a href="https://wa.me/5581998191777" target="_blank" rel="noopener noreferrer"> <img class="ico-phone"
+                src="assets/images/phone.png"> </a>
     </div>
+    
 </section>
-
-    <footer>
+    <footer style="padding-top: 30px;">
         <div class="footer--area">
             <div class="footer--item area1">
                 <div class="footer-social">
