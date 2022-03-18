@@ -7,7 +7,7 @@
 
 /*Fontes e contéudo horizontal sem barra lateral*/
 body{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     overflow-X: hidden; /*conteúdo horizontal não vai ter barra lateral*/
     width: 100vw;
     
@@ -18,7 +18,7 @@ header {
     height: 100px;
     background-color: #fff;
     color: #000;
-    box-shadow: 0px 1px 6px 0px black;
+    /* box-shadow: 0px 1px 6px 0px black; */
 }
 iframe {
     margin-left: 10px;
@@ -38,10 +38,7 @@ iframe {
     align-items: center;
 }
 
-.sub-title {
-    max-width: 771px;
-    font-size: 15px;
-}
+
 #info-footer {
     color: #000;
 }
@@ -104,7 +101,6 @@ iframe {
 /*Formatação e estilização do Banner e Slides*/
 .banner {
     height: calc(100vh - 100px);
-    /* background-color: rgba(51, 51, 51, 0.39); */
     background-image:url('../images/capa.jpg');
     background-size: cover;
     background-position: bottom;
@@ -119,7 +115,7 @@ iframe {
     width: 100vw;
     height: 100%;
     display: inline-block;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.2);
 }
 .banner .slidearea {
     display: flex;
@@ -129,17 +125,25 @@ iframe {
     align-items: center;
     color: #FFF;
 }
+
+.sub-title {
+    display: flex;
+    width: 610px;
+    font-size: 15px;
+    
+}
 .banner h1 {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 45px;
+    
+    font-size: 40px;
 }
 .banner h1 span {
     color: #8CC1C7;
+    
 }
 .banner h1 {
     text-transform: uppercase;
-    margin-top: 331px;
+    margin-top: 360px;
 }
 .button {
     display: inline-block;
@@ -213,8 +217,7 @@ section .badge-ico {
     font-weight: 600;
 }
 .default .sec-title {
-    font-size: 20px;
-    
+    font-size: 22px;
 }
 .default .sec-desc {
     font-size: 12px;
@@ -266,9 +269,10 @@ section .badge-ico {
     box-shadow: 0px 5px 20px #333;
 }
 .sec-aboutus-esq p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 23px;
 }
+
 
 /*Seção do Services (Estilização e formatação)*/
 
@@ -290,10 +294,11 @@ section .badge-ico {
    
 }
 .sec-service p {
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 10px;
     line-height: 20px;
     color: #000;
+    font-family: roboto;
 }
 .sec-services img {
     margin-bottom: 30px;
@@ -423,7 +428,7 @@ section .badge-ico {
     background-position: center; */
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #cfcfcf78;
+    
 }
 .sec-map-area {
     width: 100vw;
@@ -440,7 +445,7 @@ section .badge-ico {
 .sec-info-item {
     display: flex;
     align-items: center;
-    color: #999;
+    color: #000;
     margin-bottom: 10px;
 }
 .sec-info-item-img {
@@ -450,7 +455,8 @@ section .badge-ico {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    background-color: #999;
+    
+    background-color: #8CC1C7;
     border-radius: 15px;
     margin-right: 15px;
 }
@@ -524,7 +530,6 @@ footer {
 
     .banner {
         height: calc(100vh - -450px);
-        /* background-color: rgba(51, 51, 51, 0.39); */
         background-image:url('../images/tania.jpeg');
         background-size: cover;
         background-position: bottom;
@@ -657,12 +662,8 @@ footer {
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
     }
-    .banner h1 {
-        margin-top: 150px;
-    }
     .banner {
         height: calc(100vh - 28px);
-        /* background-color: rgba(51, 51, 51, 0.39); */
         background-image:url('../images/tania.jpeg');
         background-size: cover;
         background-position: bottom;
@@ -708,8 +709,8 @@ footer {
    /*seção Banner Menu-Responsivo*/
    .banner h1 {
        font-size: 25px;
-       margin-top: 307px;
        margin-left: 2px;
+       margin-top: 470px;
    }
    .banner h2 {
        font-size: 13px;
@@ -717,7 +718,7 @@ footer {
    .sub-title {
   
     font-size: 11px;
-    width: initial;
+    width: 316px;
     margin-left: 3px;
 }
 
