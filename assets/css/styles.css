@@ -114,8 +114,10 @@ iframe {
 .banner .slide {
     width: 100vw;
     height: 100%;
-    display: inline-block;
     background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 .banner .slidearea {
     display: flex;
@@ -133,17 +135,13 @@ iframe {
     
 }
 .banner h1 {
-    text-transform: uppercase;
-    
-    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 33px;
+    font-size: 35px;
 }
 .banner h1 span {
     color: #8CC1C7;
     
-}
-.banner h1 {
-    text-transform: uppercase;
-    margin-top: 360px;
 }
 .button {
     display: inline-block;
@@ -233,7 +231,7 @@ section .badge-ico {
 
 /*Seção branca*/
 .default.lite {
-    background-color: #fff;
+    background-color: #8cc1c74a;
 }
 .default.lite .sec-title, .default.lite .sec-body {
     color: #000;
@@ -562,13 +560,37 @@ footer {
   }
   .menu li.active a {
       border: 0;
-      color: #b78b5c;
+      color: #8CC1C7;
   }
   .menu-abrido {
       width: 45px;
       margin-right: 30px;
       display: block;
   }
+  .menujs {
+    height: auto;
+}
+.menujs li {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.menujs ul {
+    height: auto;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-right: 15%;
+    padding-left: 15%;
+    
+}
+.menujs li.menu-abrido {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
   .logo {
       margin-left: 30px;
   }
@@ -632,7 +654,7 @@ footer {
     /* margin-right: 60px; */
   }
   .banner h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 30px;
     margin-top: 823px;
 }
@@ -776,6 +798,33 @@ footer {
       flex-wrap: wrap;
       flex-direction: column;
   }
+
+  .icon {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+}
+section .badge-ico {
+    background-color: #8CC1C7;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(0 0 0 / 70%);
+}
+.badge-ico {
+    position: relative;
+    right: 40px;
+    top: -18px;
+}
+.badge-ico img {
+    height: 18px;
+}
+
   
   .sec-map-info {
     width: auto;
