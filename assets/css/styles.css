@@ -10,9 +10,8 @@
 /*Fontes e contéudo horizontal sem barra lateral*/
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     overflow-X: hidden;
-    /*conteúdo horizontal não vai ter barra lateral*/
     width: 100vw;
 }
 
@@ -117,7 +116,7 @@ box-shadow: 0px 1px 6px 0px black;
 
 .banner {
     height: calc(100vh - 100px);
-    background-image: url('../images/capa.jpg');
+    background-image: url('../images/capa_.jpg');
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
@@ -155,6 +154,7 @@ box-shadow: 0px 1px 6px 0px black;
     text-transform: capitalize;
     line-height: 33px;
     font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .banner h1 span {
@@ -228,7 +228,7 @@ section .badge-ico {
 }
 
 .badge-ico img {
-    height: 35px;
+    height: 40px;
 }
 
 
@@ -254,7 +254,6 @@ section .badge-ico {
     font-size: 12px;
     color: #000;
     margin-top: 12px;
-    margin-bottom: 40px;
 }
 
 .default .sec-body {
@@ -275,6 +274,13 @@ section .badge-ico {
 
 /*Seção do About US (Estilização e formatação)*/
 
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .sec-aboutus {
     display: flex;
 }
@@ -292,10 +298,6 @@ section .badge-ico {
 .sec-aboutus-dir img {
     width: 380px;
     box-shadow: 0px 5px 20px #333;
-}
-
-.sec-aboutus-esq strong {
-    font-size: 19px;
 }
 
 
@@ -322,7 +324,7 @@ section .badge-ico {
 }
 
 .sec-service p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 10px;
     line-height: 20px;
     color: #000;
@@ -502,20 +504,29 @@ section .badge-ico {
 }
 
 .sec-info-item-img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     background-color: #8CC1C7;
-    border-radius: 15px;
-    margin-right: 15px;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 
 .sec-info-item-img img {
-    width: 15px;
     height: auto;
+}
+
+#mensagem {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    text-transform: capitalize;
 }
 
 
@@ -715,9 +726,6 @@ footer {
         font-size: 13px;
         max-width: 484px;
     }
-    .sec-aboutus-esq strong {
-        font-size: 13px;
-    }
 }
 
 .titulo {
@@ -737,6 +745,13 @@ footer {
         color: #8CC1C7;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
+    }
+    .default .sec-title {
+        font-size: 18px;
+        text-align: center;
+    }
+    h4 {
+        font-size: 15px;
     }
     .banner {
         height: calc(100vh - 28px);
@@ -876,12 +891,13 @@ footer {
         box-shadow: 0 0 20px rgb(0 0 0 / 70%);
     }
     .badge-ico {
-        position: relative;
-        right: 40px;
-        top: -18px;
+        position: absolute;
+        top: -100px;
+        right: 29px;
     }
-    .badge-ico img {
-        height: 18px;
+    .h3,
+    h3 {
+        font-size: 23px;
     }
     .sec-map-info {
         width: auto;
@@ -889,6 +905,9 @@ footer {
     .sec-info-item {
         margin-bottom: 20px;
         font-size: 13px;
+    }
+    .sec-info-item-img {
+        padding: 12px;
     }
     .sec-info-item:last-child {
         margin-bottom: 0;
@@ -903,7 +922,8 @@ footer {
     .footer-social {
         justify-content: center;
     }
-    .sec-aboutus-esq strong {
-        font-size: 13px;
+    #mensagem {
+        margin: auto;
+        width: auto;
     }
 }
